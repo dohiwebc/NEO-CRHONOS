@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Zen+Kaku+Gothic+New:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    <title>NEO-CHRONOS | 記憶の再構築 展</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="progress-bar"></div>
+  <div id="recovery-overlay">
+    <div class="recovery-box">
+        <p class="blink">CRITICAL ERROR</p>
+        
+        <p id="status-message">RESTORING SYSTEM...</p>
+        
+        
+        <div class="recovery-bar-bg">
+            <div id="recovery-bar-fill"></div>
+        </div>
+        
+        <p id="recovery-percent">0%</p>
+    </div>
+</div>
+
+    <header class="fixed-header">
+    <a href="#top" class="logo-link">
+        <div class="logo">NEO-CHRONOS</div>
+    </a>
+    
+    <button class="menu-trigger" id="menu-trigger" aria-label="Toggle Menu">
+        <span class="trigger-line"></span>
+        <span class="trigger-line"></span>
+        <span class="trigger-line"></span>
+    </button>
+
+    <nav id="nav-menu">
+        <div class="nav-overlay"></div>
+        <ul>
+            <li><a href="#about"><span class="nav-num">01</span> ABOUT</a></li>
+            <li><a href="#exhibition"><span class="nav-num">02</span> EXHIBITION</a></li>
+            <li><a href="#artist"><span class="nav-num">03</span> ARTIST</a></li>
+            <li><a href="#ticket"><span class="nav-num">04</span> TICKET</a></li>
+            <li><a href="#faq"><span class="nav-num">05</span> FAQ</a></li>
+        </ul>
+        <div class="nav-footer">SYSTEM_VERSION: 8.8.1 // ALL RIGHTS RESERVED.</div>
+    </nav>
+</header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">NEO-CHRONOS</h1>
+                <p class="subtitle">PAST IS FUTURE, FUTURE IS PAST.</p>
+                <div class="hero-date">2026.04.01 - 04.30</div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">ABOUT</h2>
+        
+        <p id="typewriter" class="lead-text"></p>
+
+        <div class="about-bg-text">RE-CONSTRUCTING MEMORIES</div>
+        
+        <div class="about-sub-content">
+            <p>本展は、アナログとデジタルの境界線を破壊し、私たちの記憶に潜む「未完成の未来」を視覚化する試みです。</p>
+        </div>
+    </div>
+</section>
+
+        <section id="exhibition" class="exhibition">
+            <div class="container">
+                <h2 class="section-title">EXHIBITION</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="card-num">01</span>
+                        <h3>Analog Digital</h3>
+                        <p>ブラウン管の中に広がる、解像度の低い宇宙。</p>
+                    </div>
+                    <div class="card active">
+                        <span class="card-num">02</span>
+                        <h3>Plastic Future</h3>
+                        <p>1960年代が夢見た、曲線美あふれる未来予想図。</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-num">03</span>
+                        <h3>Synthetic Memory</h3>
+                        <p>AIが生成する、存在しない「かつての日常」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="artist" class="artist">
+            <div class="container">
+                <h2 class="section-title">ARTIST</h2>
+                <div class="artist-list">
+                    <div class="artist-item">
+                        <div class="artist-image"></div>
+                        <div class="artist-info">
+                            <h3>Dr. Glitch</h3>
+                            <p>デジタルノイズを物理的な彫刻に昇華させるメディアアーティスト。本展のメインビジュアルを担当。</p>
+                        </div>
+                    </div>
+                    <div class="artist-item">
+                        <div class="artist-image"></div>
+                        <div class="artist-info">
+                            <h3>Luna Plastic</h3>
+                            <p>60年代のレトロフューチャーを現代の3Dプリンティング技術で再現する造形作家。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule">
+            <div class="container">
+                <h2 class="section-title">SCHEDULE</h2>
+                <table class="schedule-table">
+                    <tr>
+                        <th>10:00</th>
+                        <td>OPEN / 記憶の同期開始</td>
+                    </tr>
+                    <tr>
+                        <th>14:00</th>
+                        <td>Live Session: "Analog Waves"</td>
+                    </tr>
+                    <tr>
+                        <th>19:00</th>
+                        <td>Night Mode: Special Lighting</td>
+                    </tr>
+                    <tr>
+                        <th>21:00</th>
+                        <td>CLOSE</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="goods" class="goods">
+            <div class="container">
+                <h2 class="section-title">GOODS</h2>
+                <div class="goods-grid">
+                    <div class="goods-item">
+                        <div class="goods-thumb"></div>
+                        <p>NEO-Tee [Standard]</p>
+                        <span>¥4,500</span>
+                    </div>
+                    <div class="goods-item">
+                        <div class="goods-thumb"></div>
+                        <p>Vinyl: Synthetic Memory</p>
+                        <span>¥3,800</span>
+                    </div>
+                    <div class="goods-item">
+                        <div class="goods-thumb"></div>
+                        <p>Acrylic Keyring</p>
+                        <span>¥1,200</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <section id="ticket" class="ticket">
+    <div class="container ticket-central-stack">
+        <h2 class="section-title">ADMISSION</h2>
+        
+      <div class="ticket-visual-wrapper">
+    <div class="ticket-card">
+        <div class="ticket-shape disabled-link t-standard" data-error="SALES SUSPENDED">
+            <div class="ticket-main">
+                <header>
+                    <span class="t-type-tag">TYPE:01</span>
+                    <span class="t-serial">#NC-8801-STD</span>
+                </header>
+                <div class="t-body">
+                    <h3 class="t-title">STANDARD</h3>
+                    <div class="t-underline"></div>
+                    <div class="t-details-grid">
+                        <div class="t-item"><span>LOC:</span><span>TOKYO / NAKAMEGURO</span></div>
+                        <div class="t-item"><span>PERMIT:</span><span>BASIC_ACCESS</span></div>
+                        <div class="t-item"><span>DATA:</span><span>RECONSTRUCTION v1.0</span></div>
+                        <div class="t-item"><span>LIMIT:</span><span>120min / SESSION</span></div>
+                    </div>
+                    <p class="t-warning">⚠ CAUTION: DATA FRAGMENTATION DETECTED.</p>
+                </div>
+                <footer>
+                    <div class="t-barcode-mini"></div>
+                    <p class="t-price">¥2,500</p>
+                </footer>
+            </div>
+            <div class="ticket-stub">
+                <div class="barcode-area"><div class="barcode-vertical"></div></div>
+                <div class="stub-text-area"><span class="stub-txt">VOID_DATA</span></div>
+            </div>
+        </div>
+        <div class="ticket-description">
+            <h4>STANDARD ADMISSION</h4>
+            <p>「NEO-CHRONOS」展示エリアへの入場が可能な標準チケットです。中目黒 THE VOID での記録再現体験が含まれます。</p>
+        </div>
+    </div>
+
+    <div class="ticket-card">
+        <div class="ticket-shape disabled-link t-premium" data-error="ACCESS DENIED">
+            <div class="ticket-main">
+                <header>
+                    <span class="t-type-tag">TYPE:02</span>
+                    <span class="t-serial">#NC-9902-PRM</span>
+                </header>
+                <div class="t-body">
+                    <h3 class="t-title">PREMIUM</h3>
+                    <div class="t-underline"></div>
+                    <div class="t-details-grid">
+                        <div class="t-item"><span>LOC:</span><span>TOKYO / NAKAMEGURO</span></div>
+                        <div class="t-item"><span>PERMIT:</span><span>ALL_AREAS / ARCHIVE</span></div>
+                        <div class="t-item"><span>DATA:</span><span>FULL_RECONSTRUCTION</span></div>
+                        <div class="t-item"><span>BONUS:</span><span>LIMITED_BOOK / AUDIO</span></div>
+                    </div>
+                    <p class="t-warning">⚠ WARNING: MEMORY RECONSTRUCTION GUARANTEED.</p>
+                </div>
+                <footer>
+                    <div class="t-barcode-mini"></div>
+                    <p class="t-price">¥4,500</p>
+                </footer>
+            </div>
+            <div class="ticket-stub">
+                <div class="barcode-area"><div class="barcode-vertical"></div></div>
+                <div class="stub-text-area"><span class="stub-txt">VOID_DATA</span></div>
+            </div>
+        </div>
+        <div class="ticket-description">
+            <h4>PREMIUM ARCHIVE</h4>
+            <p>標準入場に加え、優先入場権利、限定アーカイブブック、および展示に関連する秘匿オーディオデータの提供が含まれる完全版です。</p>
+        </div>
+    </div>
+</div>
+        <div class="system-alert-container">
+    <p class="ticket-note">
+        <span class="status-label">RESERVATION STATUS:</span>
+        <span class="status-error">RECONSTRUCTION COMPLETE / 再構築完了</span>
+    </p>
+    <p class="status-sub-text">
+        本セッションのオンライン予約受付はすべて終了いたしました。<br>
+        現在は記録のアーカイブ閲覧のみが可能です。
+    </p>
+</div>
+    </div>
+</section>
+
+
+        <section id="faq" class="faq">
+    <div class="faq-container">
+        <h2 class="section-title">RECONSTRUCTION Q&A</h2>
+        
+        <div class="faq-wrapper">
+            <div class="faq-item">
+                <input type="checkbox" id="faq-1" class="faq-toggle">
+                <label for="faq-1" class="faq-question">
+                    <span class="q-prefix">Q1.</span>
+                    <p>再構築（展示）の所要時間はどのくらいですか？</p>
+                    <span class="faq-icon"></span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>スタンダードプランで約120分を予定しています。ただし、データの同期状況により前後する可能性があります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq-2" class="faq-toggle">
+                <label for="faq-2" class="faq-question">
+                    <span class="q-prefix">Q2.</span>
+                    <p>プレミアム特典のアーカイブブックは後日購入できますか？</p>
+                    <span class="faq-icon"></span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>いいえ。アーカイブブックはPREMIUM購入者限定の非売品であり、一般販売の予定はありません。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq-3" class="faq-toggle">
+                <label for="faq-3" class="faq-question">
+                    <span class="q-prefix">Q3.</span>
+                    <p>会場内での写真・動画撮影は可能ですか？</p>
+                    <span class="faq-icon"></span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>一部の「記録許可エリア」を除き、原則として撮影禁止です。記憶の純粋性を保つための処置となります。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq-4" class="faq-toggle">
+                <label for="faq-4" class="faq-question">
+                    <span class="q-prefix">Q4.</span>
+                    <p>チケットの譲渡やキャンセルは可能ですか？</p>
+                    <span class="faq-icon"></span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>購入後のキャンセルはシステム上不可能です。譲渡については、指定の同期コードを共有することで可能です。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq-5" class="faq-toggle">
+                <label for="faq-5" class="faq-question">
+                    <span class="q-prefix">Q5.</span>
+                    <p>当日券の販売予定はありますか？</p>
+                    <span class="faq-icon"></span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>事前予約で枠が埋まった場合、当日券の供給は停止されます。現在のステータスをご確認ください。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq-6" class="faq-toggle">
+                <label for="faq-6" class="faq-question">
+                    <span class="q-prefix">Q6.</span>
+                    <p>年齢制限や入場規制はありますか？</p>
+                    <span class="faq-icon"></span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        <p>13歳未満の方は、一部刺激の強い記録再現が含まれるため、保護者の同行を推奨しております。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="sns" class="sns">
+    <div class="container">
+        <div class="sns-banner">
+            <h2 class="sns-title">FOLLOW OUR TIMELINE</h2>
+            <div class="sns-links">
+                <a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="sns-link disabled-link" data-error="CONNECTION FAILED">INSTAGRAM [X]</a>
+                <a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="sns-link disabled-link" data-error="ACCESS DENIED">X (TWITTER) [X]</a>
+                <a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="sns-link disabled-link" data-error="SERVER OFFLINE">TIKTOK [X]</a>
+            </div>
+            <p class="hashtag">#NEOCHRONOS</p>
+        </div>
+    </div>
+</section>
+
+        <section id="info" class="info">
+            <div class="container">
+                <h2 class="section-title">INFORMATION</h2>
+                <div class="info-details">
+                    <p><strong>VENUE:</strong> THE VOID NAKAMEGURO</p>
+                    <p><strong>ADDRESS:</strong> 東京都目黒区上目黒 0-0-0</p>
+                    <p><strong>ACCESS:</strong> 中目黒駅より徒歩5分</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container footer-central-stack">
+        <div class="footer-brand">
+            <h2 class="footer-logo">NEO-CHRONOS</h2>
+            <p>記憶の断片を再構築する体験型エキシビション。<br>@THE VOID NAKAMEGURO</p>
+        </div>
+
+        <div class="footer-nav-center">
+            <div class="footer-col">
+                <h4>CONTENTS</h4>
+                <ul>
+                    <li><a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="disabled-link" data-error="DATA CORRUPTED">ABOUT</a></li>
+                    <li><a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="disabled-link" data-error="NOT FOUND">EXHIBITION</a></li>
+                    <li><a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="disabled-link" data-error="UNAUTHORIZED">ARTIST</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SOCIAL</h4>
+                <ul>
+                    <li><a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="disabled-link" data-error="OFFLINE">INSTAGRAM</a></li>
+                    <li><a href="https://dohiwebc.github.io/nagiakari/" target="_blank" class="disabled-link" data-error="ACCESS DENIED">X (TWITTER)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-center">
+            <p class="copyright">&copy; 2026 NEO-CHRONOS EXHIBITION ALL RIGHTS RESERVED.</p>
+            <p class="designer-credit">Design by <a href="https://dohiwebc.github.io/nagiakari/" target="_blank" rel="noopener noreferrer" class="designer-link"><span class="designer-name">凪 燈 NAGI AKARI</span>
+    </a>
+</p>
+        </div>
+    </div>
+</footer>
+
+    <a href="#" class="ticket-btn">TICKET</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
